@@ -60,11 +60,12 @@ li:focus:after {
 }
 .main{
     background: linear-gradient(105.46deg, #352740 -0.8%, #6B5B77 100%);
-    padding: 17px 0 270px;
+    
     &__modal{
+        padding-bottom: 270px;
         width: 690px;
-        height: 835px;
         margin: 0 auto;
+        background-color: #3F3844;
     }
     &__descr{
         margin-top: 17px;
@@ -72,9 +73,11 @@ li:focus:after {
         line-height: 25px;
         color: #FEE3E3;
         font-size: 13px;
+        text-align: center;
     }
 }
 .title{
+    padding-top: 17px;
     text-align: center;
     font-style: normal;
     font-weight: 900;
@@ -85,6 +88,7 @@ li:focus:after {
 }
 .sub__title{
     margin-top: 33px;
+    margin-left: 26px;
     font-style: normal;
     font-weight: 900;
     font-size: 18px;
