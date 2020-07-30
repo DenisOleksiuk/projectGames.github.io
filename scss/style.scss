@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    
+    font-family: 'Cinzel', serif;
 }
 
 .container {
@@ -16,6 +16,12 @@
     position: relative;
 }
 a {
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+li {
 	position: relative;
 	color: #C27575; /*задаём цвет ссылки*/
 	cursor: pointer;
@@ -24,7 +30,7 @@ a {
 
 }
 
-a:after {
+li:after {
 	display: block;
 	position: absolute;
 	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
@@ -35,8 +41,8 @@ a:after {
 	transition: width 0.3s ease-out; /*задаём время анимации*/
 }
 
-a:hover:after,
-a:focus:after {
+li:hover:after,
+li:focus:after {
 	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
 .menu {
@@ -63,8 +69,9 @@ a:focus:after {
     &__descr{
         margin-top: 17px;
         font-size: 13px;
-        line-height: 15px;
+        line-height: 25px;
         color: #FEE3E3;
+        font-size: 13px;
     }
 }
 .title{
@@ -92,8 +99,15 @@ a:focus:after {
     line-height: 24px;
     color: #E37676;
 }
+.btns{
+    width: 590px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
 .btn{
-    margin-top: 10px;
+    margin: 15px;
     background: #288CAC;
     color: #fff;
     text-transform: uppercase;
@@ -104,4 +118,22 @@ a:focus:after {
     &:hover{
         background-color: #00FFFF;
     }
+}
+footer{
+    height: 207px;
+    background-color: #4D4D4D;
+    padding: 104px 0 44px 0;
+}
+.tell{
+    margin-left: 30px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.mail{
+    margin-top: 11px;
+    margin-left: 30px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
 }
